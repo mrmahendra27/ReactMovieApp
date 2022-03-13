@@ -1,12 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const MovieCard = ({ movie }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="movie">
       <div>
         <p>{movie.Year}</p>
       </div>
-      <div>
+      <div onClick={() => navigate(`/movie/${movie.imdbID}`)}>
         <img
           src={
             movie.Poster !== "N/A"

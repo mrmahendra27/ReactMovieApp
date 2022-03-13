@@ -148,6 +148,7 @@ h1 {
 }
 
 .movie div:nth-of-type(2) img {
+  cursor: pointer;
   height: 100%;
   width: 100%;
 }
@@ -189,6 +190,31 @@ h1 {
 
 .movie:hover div:nth-of-type(1) {
   opacity: 1;
+}
+
+.plot {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  color: #b48282;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b48282;
+}
+.movie-details div {
+  margin: 10px;
+}
+
+.movie-details div h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.movie-details div h3 span {
+  color: rgb(211, 190, 190);
 }
 
 @media screen and (max-width: 600px) {
