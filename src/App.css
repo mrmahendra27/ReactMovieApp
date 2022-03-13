@@ -192,9 +192,13 @@ h1 {
   opacity: 1;
 }
 
+.movie-page div {
+  margin: 25px;
+}
+
 .plot {
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin: 25px;
+  /* margin-top: 25px; */
   color: #b48282;
 }
 
@@ -211,7 +215,6 @@ h1 {
 .movie-details div h3 {
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 .movie-details div h3 span {
   color: rgb(211, 190, 190);
@@ -268,11 +271,19 @@ h1 {
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

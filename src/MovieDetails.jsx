@@ -28,7 +28,7 @@ const MovieDeatils = ({ isLoading, setIsLoading }) => {
       {isLoading == true ? (
         <div className="loader"></div>
       ) : (
-        <div>
+        <div className="movie-page">
           <h1>{movie.Title}</h1>
           <div className="plot">
             <p>{movie.Plot}</p>
