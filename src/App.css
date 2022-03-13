@@ -255,3 +255,24 @@ h1 {
     margin: 1rem;
   }
 }
+
+.loader {
+  border: 15px solid #d4bfbf;
+  border-radius: 30%;
+  border-top: 15px solid #3d5564;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
