@@ -3,7 +3,7 @@ import axios from "axios";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 
-const API_URL = "http://www.omdbapi.com?apikey=3fbeac48";
+const API_URL = "https://www.omdbapi.com?apikey=3fbeac48";
 
 const App = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -16,7 +16,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchMovies();
+    fetchMovies("");
   }, []);
 
   return (
